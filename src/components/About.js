@@ -23,41 +23,24 @@ const About = () => {
               </div>
               <div className="about-text">
                 <h3>
-                  {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                  experience.{" "}
+                  {`I'm`} a Final Year Computer Science Undergraduate Student
                 </h3>
                 <p>
-                  {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                  experience. {`I'm`} from San Francisco. I code and create web
-                  elements for amazing people around the world. I like work with
-                  new people. New people new Experiences.
+                I am deeply passionate about software development and have an insatiable curiosity to explore and learn emerging technologies. 
+                My primary focus lies in React Native and React, through which I create visually captivating and user-friendly mobile applications and websites.
+                I have dedicated countless hours to honing my skills in SwiftUI, which has empowered me to build robust and scalable native IOS applications.
+                {" "}
+                <br/>
+                {"\n"}
+                Beyond my expertise in React and JavaScript, I have also gained valuable experience working with various other programming languages such as Python, and C/C++. 
+                This diverse skill set has endowed me with a distinctive problem-solving perspective and has enabled me to tackle an extensive range of projects.
                 </p>
-                <div className="row">
-                  <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">5k</span>
-                      <div className="media-body">
-                        Projects <br />
-                        Completed.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-auto">
-                    <div className="media align-items-center">
-                      <span className="count">3k</span>
-                      <div className="media-body">
-                        Satisfied <br />
-                        Clients.
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <div className="btn-bar">
                   <a className="px-btn px-btn-theme" href="#">
-                    <span>Contact Me</span>
+                    <span>My Resume</span>
                   </a>
                   <a className="px-btn px-btn-theme" href="#">
-                    <span>Portfolio</span>
+                    <span>Projects Portfolio</span>
                   </a>
                 </div>
               </div>
@@ -72,51 +55,65 @@ const About = () => {
           <div className="col-lg-4 m-15px-tb">
             <ul className="aducation-box">
               <li>
-                <span>2010-2012</span>
-                <h6>Graphic Designer</h6>
-                <p>International Design Institute</p>
+                <span>2024</span>
+                <h5>BS Computer Science</h5>
+                <p>COMSATS University Islamabad, Lahore Campus</p>
               </li>
               <li>
-                <span>2010-2012</span>
-                <h6>Web Development</h6>
-                <p>International Design Institute</p>
+                <span>2019</span>
+                <h6>Intermediate (Pre-Engineering)</h6>
+                <p>Forman Christian College, Lahore</p>
+                
               </li>
               <li>
-                <span>2010-2012</span>
-                <h6>Search Engine Optimization</h6>
-                <p>International Design Institute</p>
+                <span>2017</span>
+                <h6>Middle School &amp; Matriculation</h6>
+                <p>Sadiq Public School, Bahawalpur</p>
+              </li>
+              <li>
+                <span>2012</span>
+                <h6>Junior School</h6>
+                <p>Aitchison College, Lahore</p>
               </li>
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
             <div className="skills-box">
-              <h3>My skills</h3>
-              <p>
-                {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                experience. I code and create web elements for amazing people
-                around the world. I like work with new people. New people new
-                Experiences.
+              <h3>Certifications &amp; Courses</h3>
+              <li>
+                <span>2022</span>
+                <h5>100 Days of SwiftUI By Paul Hudson</h5>
+                <p><a href="https://www.hackingwithswift.com/100/swiftui ">https://www.hackingwithswift.com/100/swiftui</a></p>
+                <p>
+                Swift UI as a computer science student provides valuable skills in modern UI development,
+                 mobile app development, cross-platform development, integration with Swift, industry relevance,
+                  staying up-to-date with Apple technologies, enhanced problem-solving and design skills, 
+                  and access to a vibrant development community. These skills can significantly benefit
+                   students pursuing careers in iOS and macOS app development, mobile computing, user 
+                   interface design, and software engineering.
               </p>
+              </li>
+              <h3>Technical Skills</h3>
               <div className="skill-lt">
-                <h6>HTML5</h6>
+                <h6>Digital Image Processing</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "92%" }}>
+                  <div className="skill-bar-in" style={{ width: "88%" }}>
                     <span data-toggle="tooltip" title="92%" />
                   </div>
                 </div>
               </div>
               {/* /skill */}
               <div className="skill-lt">
-                <h6>WordPress</h6>
+                <h6>Machine Learning Models and Algorithms</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "72%" }}>
+                  <div className="skill-bar-in" style={{ width: "85%" }}>
                     <span data-toggle="tooltip" title="72%" />
                   </div>
                 </div>
               </div>
               {/* /skill */}
               <div className="skill-lt">
-                <h6>Magento</h6>
+                <h6>Web and App Development</h6>
                 <div className="skill-bar">
                   <div className="skill-bar-in" style={{ width: "86%" }}>
                     <span data-toggle="tooltip" title="86%" />

@@ -1,5 +1,8 @@
 import Isotope from "isotope-layout";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef ,useState} from "react";
+import ReactModal from 'react-modal';
+import AboutPetsmall from "./AboutPetsmall";
+import AboutPedometer from "./AboutPedometer";
 const Portfolio = () => {
   // Isotope
   const isotope = useRef();
@@ -31,6 +34,7 @@ const Portfolio = () => {
     setFilterKey(key);
   };
   const activeBtn = (value) => (value === filterKey ? "active" : "");
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <section
       id="work"
@@ -55,28 +59,28 @@ const Portfolio = () => {
               onClick={handleFilterKeyChange("branding")}
               data-filter=".branding"
             >
-              Branding
+              Mobile Apps
             </li>
             <li
               className={`c-pointer ${activeBtn("photoshop")}`}
               onClick={handleFilterKeyChange("photoshop")}
               data-filter=".photoshop"
             >
-              Photoshop
+              WEB Apps
             </li>
             <li
               className={`c-pointer ${activeBtn("fashion")}`}
               onClick={handleFilterKeyChange("fashion")}
               data-filter=".fashion"
             >
-              Fashion
+              Machine Learning
             </li>
             <li
               className={`c-pointer ${activeBtn("product")}`}
               onClick={handleFilterKeyChange("product")}
               data-filter=".product"
             >
-              Product
+              Image Processing
             </li>
           </ul>
         </div>{" "}
@@ -85,14 +89,14 @@ const Portfolio = () => {
           <div className="grid-item product branding fashion">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
-                <h5 className="white-color font-weight-bold">Momb ios App</h5>
-                <span>Broadcasting ios App</span>
+                <h5 className="white-color font-weight-bold">PetsMall</h5>
+                <span>Ecommerce MERN website for Pet's Accessories </span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-1.jpg" title="" alt="" />
+                <img src="static/img/petsmall.png" title="" alt="" />
                 <div className="portfolio-icon">
                   <a
-                    href="static/img/m-portfolio-1.jpg"
+                    onClick={() => setIsOpen(true)}
                     className="gallery-link"
                   >
                     <span className="ti-plus" />
@@ -100,19 +104,28 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+            <div>
+                  <ReactModal
+                      isOpen={isOpen}
+                      contentLabel="Example Modal"
+                      onRequestClose={() => setIsOpen(false)}
+                    >
+                     <AboutPetsmall/>
+                    </ReactModal>
+                  </div>
           </div>{" "}
           {/* grid item */}
           <div className="grid-item photoshop">
             <div className="portfolio-box-01">
               <div className="portfolio-info">
-                <h5 className="white-color font-weight-bold">Momb ios App</h5>
-                <span>Broadcasting ios App</span>
+                <h5 className="white-color font-weight-bold">Watkins</h5>
+                <span>Pedometer IOS App</span>
               </div>
               <div className="portfolio-img">
                 <img src="static/img/m-portfolio-2.jpg" title="" alt="" />
                 <div className="portfolio-icon">
                   <a
-                    href="static/img/m-portfolio-2.jpg"
+                    onClick={() => setIsOpen(true)}
                     className="gallery-link"
                   >
                     <span className="ti-plus" />
@@ -120,6 +133,15 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
+            <div>
+                  <ReactModal
+                      isOpen={isOpen}
+                      contentLabel="Example Modal"
+                      onRequestClose={() => setIsOpen(false)}
+                    >
+                     <AboutPedometer/>
+                    </ReactModal>
+                  </div>
           </div>{" "}
           {/* grid item */}
           <div className="grid-item product branding">
